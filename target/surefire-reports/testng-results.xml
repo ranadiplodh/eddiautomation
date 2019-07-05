@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0"
+	total="1" passed="0">
+	<reporter-output>
+	</reporter-output>
+	<suite name="Automation Test Report" duration-ms="50242"
+		started-at="2019-07-05T09:19:53Z" finished-at="2019-07-05T09:20:44Z">
+		<groups>
+		</groups>
+		<test name="Automation Test Report" duration-ms="50242"
+			started-at="2019-07-05T09:19:53Z" finished-at="2019-07-05T09:20:44Z">
+			<class name="com.testautomation.testrunner.TestRunner">
+				<test-method status="PASS"
+					signature="setUpClass()[pri:0, instance:com.testautomation.testrunner.TestRunner@1810399e]"
+					name="setUpClass" is-config="true" duration-ms="125"
+					started-at="2019-07-05T09:19:53Z"
+					finished-at="2019-07-05T09:19:54Z">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- setUpClass -->
+				<test-method status="FAIL"
+					signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.testrunner.TestRunner@1810399e]"
+					name="feature" duration-ms="49868"
+					started-at="2019-07-05T09:19:54Z" data-provider="features"
+					finished-at="2019-07-05T09:20:43Z">
+					<params>
+						<param index="0">
+							<value>
+                <![CDATA["Verify Completion Date and Log Description"]]>
+							</value>
+						</param>
+						<param index="1">
+							<value>
+                <![CDATA["EDDI Application Flow Check"]]>
+							</value>
+						</param>
+					</params>
+					<exception
+						class="org.openqa.selenium.NoSuchSessionException">
+						<message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FDOBOJL', ip: '9.195.200.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver]]>
+						</message>
+						<full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FDOBOJL', ip: '9.195.200.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at com.testautomation.listener.ExtentReportListener.captureScreenShot(ExtentReportListener.java:73)
+at com.testautomation.listener.ExtentReportListener.testStepHandle(ExtentReportListener.java:49)
+at com.testautomation.stepdef.EDDIApplicationStepDef.verifyLogDescription(EDDIApplicationStepDef.java:149)
+at ✽.Verify Log Description(./Feature/EDDIApplication.feature:9)
+]]>
+						</full-stacktrace>
+					</exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- feature -->
+				<test-method status="PASS"
+					signature="tearDownClass()[pri:0, instance:com.testautomation.testrunner.TestRunner@1810399e]"
+					name="tearDownClass" is-config="true" duration-ms="15"
+					started-at="2019-07-05T09:20:43Z"
+					finished-at="2019-07-05T09:20:44Z">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- tearDownClass -->
+			</class> <!-- com.testautomation.testrunner.TestRunner -->
+		</test> <!-- Automation Test Report -->
+	</suite> <!-- Automation Test Report -->
+</testng-results>
